@@ -1,0 +1,13 @@
+{
+    "name": "Python Development Container",
+    "dockerFile": "../Dockerfile",
+    "settings": {
+        "terminal.integrated.shell.linux": "/bin/bash"
+    },
+    "extensions": [
+        "ms-python.python"
+        // Add other extensions you need for your development environment
+    ],
+    "forwardPorts": [8000, 8080], // Add ports to forward if needed
+    "postCreateCommand": "pip install -r requirements.txt" // Optional command to run after the container is created
+}
